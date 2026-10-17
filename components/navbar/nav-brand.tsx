@@ -1,7 +1,7 @@
 "use client";
 
 import { type FC, type MouseEvent } from "react";
-import { HERO_NAME } from "@/constants/hero-constants";
+import Image from "next/image";
 import { goToAnchor } from "@/helpers/scroll-helpers";
 
 export const NavBrand: FC = () => (
@@ -11,11 +11,17 @@ export const NavBrand: FC = () => (
       event.preventDefault();
       goToAnchor("#home");
     }}
-    className="group flex items-center gap-2 text-base font-semibold tracking-tight text-white"
+    className="group flex items-center gap-3 text-base font-semibold tracking-tight text-white"
   >
-    <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-royal to-coral text-sm font-black text-white shadow-lg shadow-coral/20 transition-transform group-hover:scale-105">
-      {HERO_NAME.charAt(0)}
-    </span>
-    <span className="hidden sm:inline">{HERO_NAME}</span>
+    <div className="relative h-10 w-10 transition-transform group-hover:scale-105">
+      <Image
+        src="/assets/brand/logo.png"
+        alt="Creative Technologies Logo"
+        fill
+        className="object-contain"
+        priority
+      />
+    </div>
+    <span className="hidden text-lg sm:inline">Creative Technologies</span>
   </a>
 );

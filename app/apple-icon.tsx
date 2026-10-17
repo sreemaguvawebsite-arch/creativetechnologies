@@ -14,7 +14,7 @@ export default function AppleIcon() {
           alignItems: "center",
           justifyContent: "center",
           background:
-            "linear-gradient(135deg, #5c33cc 0%, #ca2f8c 55%, #ea4884 100%)",
+            "linear-gradient(135deg, #00d4d4 0%, #5c7cfa 50%, #a855f7 100%)",
         }}
       >
         <div
@@ -35,12 +35,12 @@ export default function AppleIcon() {
             color: "white",
             fontFamily: "system-ui, sans-serif",
             fontWeight: 800,
-            fontSize: 118,
+            fontSize: 100,
             lineHeight: 1,
-            letterSpacing: -4,
+            letterSpacing: -3,
           }}
         >
-          H
+          CT
         </div>
       </div>
     ),

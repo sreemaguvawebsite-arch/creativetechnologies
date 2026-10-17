@@ -4,7 +4,8 @@ import { useRef, type FC } from "react";
 import { motion, useInView } from "motion/react";
 import {
   CONTACT_EMAIL,
-  HERO_NAME,
+  CONTACT_PHONE,
+  CONTACT_PHONE_ALT,
   MY_SOCIALS,
 } from "@/constants/portfolio-constants";
 
@@ -33,21 +34,42 @@ export const Footer: FC = () => {
         className="mt-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8"
       >
         <div>
-          <div className="flex items-center gap-2 text-base font-semibold tracking-tight text-white">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-royal to-coral text-white text-sm font-black">
-              H
-            </span>
-            <span>{HERO_NAME}</span>
+          <div className="flex items-center gap-3 text-lg font-bold tracking-tight text-white">
+            <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-[#00d4d4] via-[#5c7cfa] to-[#a855f7] text-white text-sm font-black">
+              CT
+            </div>
+            <span>Creative Technologies</span>
           </div>
           <p className="mt-3 text-sm text-neutral-400 max-w-sm">
-            Building scalable web & mobile products with care. Reach out at{" "}
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="text-white hover:text-coral transition-colors"
-            >
-              {CONTACT_EMAIL}
-            </a>
+            Building innovative software solutions for businesses worldwide.
           </p>
+          <div className="mt-4 space-y-2 text-sm">
+            <p className="text-neutral-400">
+              <span className="text-white">Email:</span>{" "}
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="text-coral hover:text-white transition-colors"
+              >
+                {CONTACT_EMAIL}
+              </a>
+            </p>
+            <p className="text-neutral-400">
+              <span className="text-white">Phone:</span>{" "}
+              <a
+                href={`tel:+91${CONTACT_PHONE}`}
+                className="text-coral hover:text-white transition-colors"
+              >
+                +91 {CONTACT_PHONE}
+              </a>
+              {" / "}
+              <a
+                href={`tel:+91${CONTACT_PHONE_ALT}`}
+                className="text-coral hover:text-white transition-colors"
+              >
+                +91 {CONTACT_PHONE_ALT}
+              </a>
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-col md:items-end gap-4">
@@ -70,7 +92,7 @@ export const Footer: FC = () => {
           </div>
           <div className="flex gap-3 text-sm text-neutral-500">
             <span>
-              © {new Date().getFullYear()} {HERO_NAME}
+              © {new Date().getFullYear()} Creative Technologies
             </span>
             <span>·</span>
             <span>All rights reserved.</span>
@@ -84,7 +106,7 @@ export const Footer: FC = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="mt-16 text-center text-[20vw] md:text-[14rem] font-black leading-none text-white/[0.03] select-none"
       >
-        HASNAIN
+        CREATIVE TECHNOLOGIES
       </motion.p>
     </footer>
   );

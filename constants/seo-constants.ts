@@ -2,24 +2,24 @@ import { HERO_LOCATION, HERO_NAME, HERO_ROLE } from "./hero-constants";
 import { CONTACT_EMAIL, MY_SOCIALS } from "./social-constants";
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.hasnainirfan.com"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.creativetechnologies.com"
 ).replace(/\/$/, "");
 
 export const absoluteUrl = (path: string) =>
   `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 
-export const SITE_NAME = `${HERO_NAME} | ${HERO_ROLE}`;
+export const SITE_NAME = `Creative Technologies | ${HERO_ROLE}`;
 
-export const SITE_TITLE = `${HERO_NAME} | ${HERO_ROLE}`;
+export const SITE_TITLE = `${HERO_NAME} | ${HERO_ROLE} at Creative Technologies`;
 
 export const SITE_DESCRIPTION =
-  "Senior Software Engineer with 5+ years building scalable web and mobile products in React, Next.js and Node.js. Open to freelance and contract work.";
+  "Creative Technologies - A software company with 10+ years of experience building innovative web and mobile solutions. Founded by Chandu, delivering excellence in software development.";
 
 export const SITE_TAGLINE =
-  "Scalable web & mobile products built with React, Next.js and Node.js.";
+  "Innovative software solutions built with cutting-edge technologies.";
 
 export const OG_IMAGE = "/og.jpg";
-export const OG_IMAGE_ALT = `${HERO_NAME}, ${HERO_ROLE} portfolio`;
+export const OG_IMAGE_ALT = `Creative Technologies - ${HERO_NAME}, ${HERO_ROLE} portfolio`;
 export const OG_LOCALE = "en_US";
 
 export const OG_IMAGES = [
@@ -35,27 +35,28 @@ export const GOOGLE_SITE_VERIFICATION =
   process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "";
 
 export const SITE_KEYWORDS = [
+  "Creative Technologies",
   HERO_NAME,
-  "Software Engineer",
-  "Senior Software Engineer",
-  "Full Stack Developer",
+  "Software Company",
+  "Software Development",
+  "Full Stack Development",
   "Next.js Developer",
   "React Developer",
   "React Native Developer",
   "Node.js Developer",
-  "Frontend Developer",
-  "Web Developer Portfolio",
-  "Freelance Developer",
-  "Hire Software Engineer",
+  "Web Development Company",
+  "Mobile App Development",
+  "Custom Software Solutions",
   HERO_LOCATION,
-  "Pakistan",
-  "Remote Developer",
+  "Tagarapuvalasa",
+  "Santapatta",
+  "10+ years experience",
 ];
 
-export const HOME_TITLE = `${HERO_NAME} | ${HERO_ROLE} & Next.js Developer`;
+export const HOME_TITLE = `Creative Technologies | ${HERO_NAME} - ${HERO_ROLE}`;
 
 export const HOME_DESCRIPTION =
-  "Senior Software Engineer in Karachi building scalable web, mobile and API products with React, Next.js and Node.js. Open to freelance and contract work.";
+  "Creative Technologies, founded by Chandu with 10+ years of experience, delivers innovative web and mobile software solutions. Located at 6-55-17, Santapatta Tagarapuvalasa.";
 
 export const ADMIN_TITLE = "Contact submissions";
 
@@ -71,34 +72,34 @@ export const SITE_SECTIONS = [
   {
     name: "Home",
     hash: "#home",
-    description: `${HERO_NAME}, ${HERO_ROLE} building scalable web and mobile products.`,
+    description: `Creative Technologies, founded by ${HERO_NAME}, building innovative software solutions.`,
   },
   {
     name: "About",
     hash: "#about",
-    description: `Background, stack and working style of ${HERO_NAME}, a ${HERO_ROLE} based in ${HERO_LOCATION}.`,
+    description: `Learn about Creative Technologies and ${HERO_NAME}, ${HERO_ROLE} with 10+ years of experience based in ${HERO_LOCATION}.`,
   },
   {
     name: "Services",
     hash: "#services",
     description:
-      "Web applications, cross-platform mobile apps, APIs and technical consulting for startups and product teams.",
+      "Web applications, cross-platform mobile apps, custom software development and technical consulting for businesses.",
   },
   {
     name: "Work",
     hash: "#work",
     description:
-      "Selected projects and case studies built with React, Next.js, React Native and Node.js.",
+      "Selected projects and case studies from Creative Technologies, showcasing our expertise in modern software development.",
   },
   {
     name: "Testimonials",
     hash: "#testimonials",
-    description: `What clients and teammates say about working with ${HERO_NAME}.`,
+    description: `What clients say about working with ${HERO_NAME} and Creative Technologies.`,
   },
   {
     name: "Contact",
     hash: "#contact",
-    description: `Get in touch with ${HERO_NAME} about freelance, contract or full-time work.`,
+    description: `Get in touch with Creative Technologies at 6-55-17, Santapatta Tagarapuvalasa for your software development needs.`,
   },
 ] as const;
 

@@ -12,11 +12,13 @@ import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/sections/footer";
 import { PageLoader } from "@/components/portfolio/page-loader";
 import { GlobeLayer } from "@/components/globe/globe-layer";
+import { WhatsAppFloat } from "@/components/portfolio/whatsapp-float";
 
 export const HomePage: FC = () => (
   <>
     <PageLoader />
     <GlobeLayer />
+    <WhatsAppFloat />
     <div id="site-content" className="relative z-10 w-full">
       <Navbar />
       <Hero />

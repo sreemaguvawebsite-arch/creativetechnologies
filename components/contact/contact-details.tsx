@@ -5,20 +5,21 @@ import { motion } from "motion/react";
 import { revealProps } from "@/animations/scroll-animations";
 import {
   CONTACT_EMAIL,
+  CONTACT_PHONE,
   HERO_LOCATION,
 } from "@/constants/portfolio-constants";
 import { ContactInfoCard } from "./contact-info-card";
 
 export const ContactDetails: FC = () => (
   <motion.div {...revealProps()} className="lg:col-span-5">
-    <p className="text-eyebrow">Let&apos;s Talk</p>
+    <p className="text-eyebrow">Let&apos;s Connect</p>
     <h2 className="text-heading mt-3">
-      Have an idea? <br />
-      <span className="text-gradient">Let&apos;s ship it.</span>
+      Have a project in mind? <br />
+      <span className="text-gradient">Let&apos;s build it together.</span>
     </h2>
     <p className="mt-4 leading-relaxed text-neutral-400">
-      Whether you&apos;re launching something new, scaling what you have, or
-      rescuing a stuck project, drop me a line and I&apos;ll get back within 24
+      Whether you&apos;re starting a new project, scaling your business, or
+      need expert consultation, reach out to us and we&apos;ll respond within 24
       hours.
     </p>
 
@@ -31,9 +32,16 @@ export const ContactDetails: FC = () => (
         gradient="from-coral/30 to-lavender/30"
       />
       <ContactInfoCard
+        icon="📱"
+        label="WhatsApp"
+        value={CONTACT_PHONE}
+        href={`https://wa.me/91${CONTACT_PHONE}`}
+        gradient="from-[#25D366]/30 to-[#128C7E]/30"
+      />
+      <ContactInfoCard
         icon="⌖"
-        label="Based In"
-        value={`${HERO_LOCATION} · Open to remote work worldwide`}
+        label="Location"
+        value={HERO_LOCATION}
         gradient="from-aqua/30 to-mint/30"
       />
       <ContactInfoCard

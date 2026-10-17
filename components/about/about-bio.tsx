@@ -19,33 +19,34 @@ export const AboutBio: FC = () => {
       className="glass gradient-border p-8 md:p-10 lg:col-span-7"
     >
       <p className="mb-3 text-sm uppercase tracking-[0.25em] text-neutral-400">
-        Who I Am
+        About Us
       </p>
       <h3 className="mb-4 text-2xl font-bold md:text-3xl">
-        {HERO_NAME} · {HERO_LOCATION}
+        Creative Technologies · {HERO_LOCATION}
       </h3>
       <p className="text-base leading-relaxed text-neutral-300 md:text-lg">
-        I&apos;m a Senior Software Engineer with{" "}
-        <span className="font-semibold text-white">5+ years</span> of experience
-        designing and shipping production-grade web and mobile products. I lead
-        with clean code, sharp problem-solving and a deep care for the user
-        experience.
+        <span className="font-semibold text-white">Creative Technologies</span>{" "}
+        is a leading software development company with{" "}
+        <span className="font-semibold text-white">10+ years</span> of experience
+        delivering innovative software solutions. We specialize in building 
+        cutting-edge web and mobile applications that drive business growth.
       </p>
       <p className="mt-4 leading-relaxed text-neutral-400">
-        From <span className="text-white">Front-End Developer</span> to{" "}
-        <span className="text-white">Junior Team Lead</span>, and now{" "}
-        <span className="text-white">Senior Software Engineer at Getweys</span>,
-        I&apos;ve led teams, mentored developers, and contributed to architecture
-        decisions that kept codebases scalable and maintainable.
+        Based in{" "}
+        <span className="text-white">Santapatta Tagarapuvalasa</span>,
+        we have grown into a trusted partner for businesses seeking digital 
+        transformation. Our team combines technical excellence with creative 
+        problem-solving to deliver solutions that exceed expectations and help 
+        our clients succeed in the digital age.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
         <a href="#contact" className="btn-primary">
-          <span>Start a project</span>
+          <span>Get in touch</span>
           <span aria-hidden>→</span>
         </a>
         <a href="#work" className="btn-ghost">
-          <span>See past work</span>
+          <span>View our work</span>
         </a>
       </div>
     </motion.div>

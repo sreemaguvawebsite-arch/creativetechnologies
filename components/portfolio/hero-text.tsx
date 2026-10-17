@@ -33,14 +33,14 @@ export const HeroText: FC = () => {
           className="reveal text-3xl font-light text-neutral-400"
           style={delay(0.12)}
         >
-          Hi, I&apos;m {HERO_NAME}
+          Welcome to Creative Technologies
         </h1>
 
         <p
           className="reveal text-5xl lg:text-6xl font-bold mt-2 text-gradient leading-tight"
           style={delay(0.19)}
         >
-          {HERO_ROLE} <br />
+          We are a software company <br />
           crafting
         </p>
 
@@ -60,11 +60,11 @@ export const HeroText: FC = () => {
 
         <div className="reveal flex flex-wrap gap-4 mt-10" style={delay(0.4)}>
           <a href="#contact" className="btn-primary">
-            <span>Hire Me</span>
+            <span>Contact Us</span>
             <span aria-hidden>→</span>
           </a>
           <a href="#work" className="btn-ghost">
-            <span>View My Work</span>
+            <span>View Our Work</span>
           </a>
         </div>
       </div>
@@ -87,14 +87,14 @@ export const HeroText: FC = () => {
           className="reveal text-3xl font-light text-neutral-400"
           style={delay(0.12)}
         >
-          Hi, I&apos;m {HERO_NAME.split(" ")[0]}
+          Welcome to Creative Technologies
         </p>
 
         <p
           className="reveal text-4xl font-bold text-gradient"
           style={delay(0.19)}
         >
-          {HERO_ROLE}
+          Software Solutions
         </p>
 
         <div className="reveal" style={delay(0.26)}>
@@ -116,11 +116,11 @@ export const HeroText: FC = () => {
           style={delay(0.4)}
         >
           <a href="#contact" className="btn-primary w-full">
-            <span>Hire Me</span>
+            <span>Contact Us</span>
             <span aria-hidden>→</span>
           </a>
           <a href="#work" className="btn-ghost w-full">
-            <span>View My Work</span>
+            <span>View Our Work</span>
           </a>
         </div>
       </div>

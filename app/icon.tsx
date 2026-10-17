@@ -15,7 +15,7 @@ export default function Icon() {
           justifyContent: "center",
           borderRadius: 8,
           background:
-            "linear-gradient(135deg, #5c33cc 0%, #ca2f8c 55%, #ea4884 100%)",
+            "linear-gradient(135deg, #00d4d4 0%, #5c7cfa 50%, #a855f7 100%)",
           boxShadow: "inset 0 1px 1px rgba(255,255,255,0.35)",
         }}
       >
@@ -25,12 +25,12 @@ export default function Icon() {
             color: "white",
             fontFamily: "system-ui, sans-serif",
             fontWeight: 800,
-            fontSize: 23,
+            fontSize: 20,
             lineHeight: 1,
-            letterSpacing: -1,
+            letterSpacing: -0.5,
           }}
         >
-          H
+          CT
         </div>
       </div>
     ),

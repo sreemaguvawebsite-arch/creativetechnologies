@@ -1,19 +1,19 @@
 import { type Stat } from "@/types/portfolio-types";
 
-export const HERO_NAME = "Hasnain Irfan";
+export const HERO_NAME = "Chandu";
 
-export const HERO_ROLE = "Senior Software Engineer";
+export const HERO_ROLE = "Founder & CEO";
 
-export const HERO_LOCATION = "Karachi, Pakistan";
+export const HERO_LOCATION = "Santapatta Tagarapuvalasa";
 
 export const HERO_TAGLINE =
-  "I architect scalable web & mobile products with React, Next.js and Node.js, turning complex ideas into shipped, revenue-ready software.";
+  "Building innovative software solutions with 10+ years of experience, transforming ideas into powerful digital products for businesses worldwide.";
 
-export const FLIP_WORDS = ["Scalable", "Modern", "Reliable"];
+export const FLIP_WORDS = ["Innovative", "Scalable", "Reliable"];
 
 export const STATS: Stat[] = [
-  { value: "5+", label: "Years building products" },
-  { value: "20+", label: "Shipped projects" },
-  { value: "1k+", label: "End users served" },
-  { value: "40%", label: "Avg. productivity lift" },
+  { value: "10+", label: "Years of experience" },
+  { value: "50+", label: "Successful projects" },
+  { value: "100+", label: "Happy clients" },
+  { value: "6-55", label: "Team members" },
 ];

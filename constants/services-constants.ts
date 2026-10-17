@@ -3,50 +3,62 @@ import { type Service } from "@/types/portfolio-types";
 export const SERVICES: Service[] = [
   {
     id: 1,
-    title: "Web Applications",
+    title: "Web Development",
     description:
-      "Production-grade Next.js & React apps that are fast, accessible, SEO-friendly and built to scale.",
+      "Modern, responsive websites and web applications built with the latest technologies for optimal performance and user experience.",
     icon: "/assets/logos/react.svg",
     bullets: [
-      "Landing pages & marketing sites",
-      "Dashboards & SaaS platforms",
-      "Server rendering & edge runtime",
+      "Responsive website design",
+      "E-commerce solutions",
+      "Progressive web apps",
     ],
   },
   {
     id: 2,
-    title: "Mobile Apps",
+    title: "App Development",
     description:
-      "Cross-platform mobile apps with React Native + Expo, polished UI and native-grade performance.",
+      "Native Android applications with cutting-edge features, intuitive interfaces, and seamless performance.",
     icon: "/assets/logos/react.svg",
     bullets: [
-      "iOS & Android from one codebase",
-      "Push notifications & deep links",
-      "Offline-first patterns",
+      "Custom Android apps",
+      "Cross-platform solutions",
+      "App maintenance & updates",
     ],
   },
   {
     id: 3,
-    title: "Admin Panels & CMS",
+    title: "iOS Development",
     description:
-      "Powerful internal tools and admin portals with reusable components and role-based access.",
+      "Premium iOS applications designed for iPhone and iPad with native Swift development and App Store optimization.",
     icon: "/assets/logos/tailwindcss.svg",
     bullets: [
-      "Bespoke admin dashboards",
-      "Data tables, filters & exports",
-      "Auth, roles & permissions",
+      "Native iOS apps",
+      "SwiftUI development",
+      "App Store deployment",
     ],
   },
   {
     id: 4,
-    title: "APIs & Backends",
+    title: "ERP & Billing Software",
     description:
-      "Robust Node.js / Express APIs with SQL or MongoDB, cron jobs, and clean integration patterns.",
+      "Comprehensive ERP solutions and billing systems tailored to streamline your business operations and financial management.",
     icon: "/assets/logos/javascript.svg",
     bullets: [
-      "REST API design & docs",
-      "Database modelling (SQL & NoSQL)",
-      "Background jobs & webhooks",
+      "Custom ERP systems",
+      "Inventory management",
+      "Automated billing solutions",
+    ],
+  },
+  {
+    id: 5,
+    title: "Digital Marketing",
+    description:
+      "Strategic digital marketing services to boost your online presence, reach target audiences, and drive business growth.",
+    icon: "/assets/logos/tailwindcss.svg",
+    bullets: [
+      "SEO & SEM optimization",
+      "Social media marketing",
+      "Content strategy & campaigns",
     ],
   },
 ];
